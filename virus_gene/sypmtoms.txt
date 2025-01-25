@@ -1,0 +1,4 @@
+Chikungunya (CHIK): Sudden high fever, Severe joint pain (polyarthritis), Rash (non-itchy, maculopapular), Muscle pain, Headache, Fatigue, Chronic joint pain (lasting months/years in some cases)
+Dengue (DENV 1-4): High fever ("breakbone fever"), Severe muscle and joint pain, Headache, Pain behind the eyes, Nausea, Vomiting, Rash, Plasma leakage (fluid accumulation), Abdominal pain, Persistent vomiting, Bleeding (gums, nose, etc.), Shock (Dengue Shock Syndrome)
+SARS-CoV-2 (COVID): Fever, Cough (dry or productive), Fatigue, Muscle/body aches, Loss of taste or smell, Sore throat, Headache, Shortness of breath, Pneumonia, Acute respiratory distress syndrome (ARDS), Multi-organ failure, Long COVID (persistent fatigue, brain fog)
+Zika Virus: Mild fever, Rash (maculopapular, widespread), Conjunctivitis (red eyes), Muscle pain, Joint pain, Headache, Neurological complications (Guillain-Barré syndrome), Congenital Zika Syndrome (birth defects in fetuses)
