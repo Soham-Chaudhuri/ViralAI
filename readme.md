@@ -50,7 +50,7 @@ Check out our video demonstration on YouTube: [ViralAI Demo](https://youtu.be/QR
        "10": "Staphylococcus Aureus",
        "11": "Zika Virus"
    }
-
+```
 3. **Sequence Analysis**:
     - GC vs AT Content Plot: Visualize the ratio of GC content vs AT content in the input sequence.
     - Hydrophobic vs Hydrophilic Score Plot: Analyze the hydrophobicity and hydrophilicity of the amino acid sequence.
