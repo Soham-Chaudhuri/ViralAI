@@ -58,3 +58,11 @@ Check out our video demonstration on YouTube: [ViralAI Demo](https://youtu.be/QR
 
 4. **Protein Structure Visualization**:
     - A predicted 3D protein structure will be rendered in the browser using Py3DMol.
+
+## 📥 Download Assets
+To run the project with the necessary assets:
+
+1. **Download assets from the following link:**  
+   [Google Drive - ViralAI Assets](https://drive.google.com/drive/folders/1PwgmvlBmOmq4zHRF8MZvjKz8hBXN9M-G?usp=sharing)
+
+2. **Place the downloaded files** inside the FastAPI `assets` folder.
