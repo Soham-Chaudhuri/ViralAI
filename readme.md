@@ -35,20 +35,20 @@ Check out our video demonstration on YouTube: [ViralAI Demo](https://youtu.be/QR
 2. **Prediction**:
    The machine learning model will classify the sequence as one of the following:
 
-   ```json
+  ```json
    {
-       0: "Bacillus Subtilis",
-       1: "Chikungunya Virus",
-       2: "Clostridium Botulinum",
-       3: "Escherichia Coli",
-       4: "Herpes Simplex Virus 1",
-       5: "Human Mastadenovirus C",
-       6: "Human Papillomavirus",
-       7: "Influenza A Virus",
-       8: "Listeria Monocytogenes",
-       9: "Pseudomonas Aeruginosa",
-       10: "Staphylococcus Aureus",
-       11: "Zika Virus"
+       "0": "Bacillus Subtilis",
+       "1": "Chikungunya Virus",
+       "2": "Clostridium Botulinum",
+       "3": "Escherichia Coli",
+       "4": "Herpes Simplex Virus 1",
+       "5": "Human Mastadenovirus C",
+       "6": "Human Papillomavirus",
+       "7": "Influenza A Virus",
+       "8": "Listeria Monocytogenes",
+       "9": "Pseudomonas Aeruginosa",
+       "10": "Staphylococcus Aureus",
+       "11": "Zika Virus"
    }
 
 3. **Sequence Analysis**:
