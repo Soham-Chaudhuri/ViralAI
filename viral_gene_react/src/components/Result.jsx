@@ -14,12 +14,19 @@ const Result = () => {
   const [pdbData, setPdbData] = useState(null);
   const { searchQuery } = location.state || {};
   const classMap = {
-    0: "Chikungunya",
-    1: "Influenza A",
-    2: "Influenza B",
-    3: "Influenza C",
-    4: "Zika",
-  };
+    0: "Bacillus Subtilis",
+    1: "Chikungunya Virus",
+    2: "Clostridium Botulinum",
+    3: "Escherichia Coli",
+    4: "Herpes Simplex Virus 1",
+    5: "Human Mastadenovirus C",
+    6: "Human Papillomavirus",
+    7: "Influenza A Virus",
+    8: "Listeria Monocytogenes",
+    9: "Pseudomonas Aeruginosa",
+    10: "Staphylococcus Aureus",
+    11: "Zika Virus"
+};
   const [dataFetched, setDataFetched] = useState(false);
 
   useEffect(() => {
@@ -35,6 +42,7 @@ const Result = () => {
     setMaxIndex(
       queryResult.reduce((iMax, x, i, arr) => (x > arr[iMax] ? i : iMax), 0)
     );
+    console.log(queryResult);
     setMaxValue(queryResult[maxIndex]);
   }, [queryResult, maxIndex]);
 
@@ -99,11 +107,11 @@ const Result = () => {
           <div className="text-center pt-20 py-6">
             <h1 className="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">
               {maxValue > 0.8
-                ? `Virus is a strain of ${classMap[maxIndex]}`
-                : "Unknown Virus Strain"}
+                ? `Strain of ${classMap[maxIndex]}`
+                : "Unknown Strain"}
             </h1>
             <p className="mb-2 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-              Some of its properties are plotted against the predefined viral
+              Some of its properties are plotted against the predefined bacterial & viral
               genomes below.
             </p>
           </div>

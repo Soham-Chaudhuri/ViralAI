@@ -43,10 +43,10 @@ const Navbar = () => {
                   <a href="#">Home</a>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sky-400"></span>
                 </li>
-                <li className="text-xl cursor-pointer group hover:text-sky-400">
+                {/* <li className="text-xl cursor-pointer group hover:text-sky-400">
                 <a href="#" target="_blank" rel="noopener noreferrer">Viruses</a>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sky-400"></span>
-                </li>
+                </li> */}
                 <li className="text-xl cursor-pointer group hover:text-sky-400">
                 <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sky-400"></span>

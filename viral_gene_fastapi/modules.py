@@ -3,12 +3,12 @@ import numpy as np
 import pandas as pd
 import dill
 from sklearn.feature_extraction.text import TfidfVectorizer
-with open('./assets/Model_1.pkl', 'rb') as f:
+with open('./assets/bacteria&virus.pkl', 'rb') as f:
     model_list = dill.load(f)
 
-model = model_list[2]
-tfidf = model_list[0]
-scaler = model_list[1]
+model = model_list["model"]
+tfidf = model_list["tfidf"]
+scaler = model_list["scaler"]
 
 def gc_content(sequence):
     g_count = sequence.count('G')

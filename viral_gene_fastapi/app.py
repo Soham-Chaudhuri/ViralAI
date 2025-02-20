@@ -26,20 +26,20 @@ influenza_a_sequences = []
 with open("./assets/influenza_a_sequences.fasta", "r") as fasta_file:
     for seq_record in SeqIO.parse(fasta_file, "fasta"):
         influenza_a_sequences.append(str(seq_record.seq))
-influenza_b_sequences = []
-with open("./assets/influenza_b_sequences.fasta", "r") as fasta_file:
+staphylococcus_aureus_sequences = []
+with open("./assets/staphylococcus_aureus_sequences.fasta", "r") as fasta_file:
     for seq_record in SeqIO.parse(fasta_file, "fasta"):
-        influenza_b_sequences.append(str(seq_record.seq))
-influenza_c_sequences = []
-with open("./assets/influenza_c_sequences.fasta", "r") as fasta_file:
+        staphylococcus_aureus_sequences.append(str(seq_record.seq))
+escherichia_coli_sequences = []
+with open("./assets/escherichia_coli_sequences.fasta", "r") as fasta_file:
     for seq_record in SeqIO.parse(fasta_file, "fasta"):
-        influenza_c_sequences.append(str(seq_record.seq))
+        escherichia_coli_sequences.append(str(seq_record.seq))
 
 zika_sequences = random.sample(zika_sequences,100)
 chikungunya_sequences = random.sample(chikungunya_sequences,100)
 influenza_a_sequences = random.sample(influenza_a_sequences,100)
-influenza_b_sequences = random.sample(influenza_b_sequences,100)
-influenza_c_sequences = random.sample(influenza_c_sequences,100)
+staphylococcus_aureus_sequences = random.sample(staphylococcus_aureus_sequences,100)
+escherichia_coli_sequences = random.sample(escherichia_coli_sequences,100)
 
 viral_data = {
     "zika":{
@@ -66,7 +66,7 @@ viral_data = {
         "hydrophilic_score":[],
         "sequence_entropy":[],
     },
-    "influenza_b":{
+    "staphylococcus_aureus":{
         "gc_score":[],
         "at_score":[],
         "molecular_weight":[],
@@ -74,7 +74,7 @@ viral_data = {
         "hydrophilic_score":[],
         "sequence_entropy":[],
     },
-    "influenza_c":{
+    "escherichia_coli":{
         "gc_score":[],
         "at_score":[],
         "molecular_weight":[],
@@ -114,20 +114,20 @@ def create_data():
         viral_data["influenza_a"]["hydrophobic_score"].append(hydrophobicity(seq)[0])
         viral_data["influenza_a"]["hydrophilic_score"].append(hydrophobicity(seq)[1])
         viral_data["influenza_a"]["sequence_entropy"].append(sequence_entropy(seq))
-    for seq in influenza_b_sequences:
-        viral_data["influenza_b"]["gc_score"].append(gc_content(seq))
-        viral_data["influenza_b"]["at_score"].append(at_content(seq))
-        viral_data["influenza_b"]["molecular_weight"].append(molecular_weight(seq))
-        viral_data["influenza_b"]["hydrophobic_score"].append(hydrophobicity(seq)[0])
-        viral_data["influenza_b"]["hydrophilic_score"].append(hydrophobicity(seq)[1])
-        viral_data["influenza_b"]["sequence_entropy"].append(sequence_entropy(seq))
-    for seq in influenza_c_sequences:
-        viral_data["influenza_c"]["gc_score"].append(gc_content(seq))
-        viral_data["influenza_c"]["at_score"].append(at_content(seq))
-        viral_data["influenza_c"]["molecular_weight"].append(molecular_weight(seq))
-        viral_data["influenza_c"]["hydrophobic_score"].append(hydrophobicity(seq)[0])
-        viral_data["influenza_c"]["hydrophilic_score"].append(hydrophobicity(seq)[1])
-        viral_data["influenza_c"]["sequence_entropy"].append(sequence_entropy(seq))
+    for seq in staphylococcus_aureus_sequences:
+        viral_data["staphylococcus_aureus"]["gc_score"].append(gc_content(seq))
+        viral_data["staphylococcus_aureus"]["at_score"].append(at_content(seq))
+        viral_data["staphylococcus_aureus"]["molecular_weight"].append(molecular_weight(seq))
+        viral_data["staphylococcus_aureus"]["hydrophobic_score"].append(hydrophobicity(seq)[0])
+        viral_data["staphylococcus_aureus"]["hydrophilic_score"].append(hydrophobicity(seq)[1])
+        viral_data["staphylococcus_aureus"]["sequence_entropy"].append(sequence_entropy(seq))
+    for seq in escherichia_coli_sequences:
+        viral_data["escherichia_coli"]["gc_score"].append(gc_content(seq))
+        viral_data["escherichia_coli"]["at_score"].append(at_content(seq))
+        viral_data["escherichia_coli"]["molecular_weight"].append(molecular_weight(seq))
+        viral_data["escherichia_coli"]["hydrophobic_score"].append(hydrophobicity(seq)[0])
+        viral_data["escherichia_coli"]["hydrophilic_score"].append(hydrophobicity(seq)[1])
+        viral_data["escherichia_coli"]["sequence_entropy"].append(sequence_entropy(seq))
 
 def render_mol(pdb):
     view = py3Dmol.view(width=800, height=500)

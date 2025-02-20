@@ -28,17 +28,17 @@ const Home = () => {
         <Navbar />
         <div className="text-center pt-20 py-6">
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-            Viral Gene Analyzer
+            Gene Analyzer
           </h1>
           <p className="mb-2 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
             Predict unknown gene sequences and analyze their behavior against
-            predefined viral genomes with cutting-edge accuracy.
+            predefined bacterial and viral genomes with cutting-edge accuracy.
           </p>
           <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
             Our tool analyzes gene sequences by plotting properties such as GC
             content, hydrophilicity, sequence entropy, and more. It also
             provides insights into potential protein structures based on these
-            properties, comparing them against predefined viral sequences for a
+            properties, comparing them against predefined sequences for a
             comprehensive analysis.
           </p>
           <button
